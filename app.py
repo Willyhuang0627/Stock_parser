@@ -1,4 +1,10 @@
-import numpy
+#import numpy
 import pymssql
 
-print("Import success")
+server = "willy0627.database.windows.net"
+database = "free-sql-db-0798852"
+user = "dbeng"
+password = "Aa12345678"
+#print("Import success")
+connect = pymssql.connect(server,user,password,database)
+print("Login success")
